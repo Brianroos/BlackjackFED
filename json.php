@@ -1,6 +1,7 @@
 <?php
   // Header & connection
   header('Content-Type: application/json');
+  header('Access-Control-Allow-Origin: *');
 
   $mysqli = new mysqli('##', '##', '##', '##');
   if($mysqli->connect_errno) {
