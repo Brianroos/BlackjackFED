@@ -4,17 +4,43 @@
     <title>Blackjack FED</title>
     <meta charset="utf-8">
     <meta name="description" content="Blackjack FED">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="brian roos, blackjack, fed">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="container">
+      <h1>Blackjack</h1>
+      <div class="divider"></div>
 
-      <!-- <div id="hand bank-hand"></div>
-      <div id="hand player-hand"></div>
-      <button type="button" id="startGame">Start Game</button> -->
+      <div id="intro-container">
+        <p>Klik op onderstaande knop om een nieuw spel te beginnen!</p>
+        <a href="#" id="newgame" class="button">Start nieuw spel</a>
+      </div>
+
+      <div id="hand-container">
+        <div id="budget-container"></div>
+        <div id="dealer-hand" class="hand"></div>
+        <div id="player-hand" class="hand"></div>
+      </div>
+
+      <div id="options-container">
+        <a href="#" id="drawcard" class="button">Nieuwe kaart</a>
+        <a href="#" id="stopgame" class="button cancel">Stop</a>
+      </div>
+    </div>
+
+    <div id="endscreen-modal" class="modal hide">
+      <div class="modal-content">
+        <h3>Eindscherm</h3>
+        <div class="divider"></div>
+        <div class="dealer-result result"><p>Dealer</p><div class="score"></div></div>
+        <div class="player-result result"><p>U</p><div class="score"></div></div>
+        <div class="message"></div>
+        <div class="divider"></div>
+        <a href="#" id="newhand" class="button">Deal nieuwe kaarten</a>
+      </div>
     </div>
 
     <!-- Scripts -->
