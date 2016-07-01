@@ -10,7 +10,6 @@
 
   // Perform query and push the data in an array
   $query = '##';
-  $arr = array();
   $arrCards = array();
 
   if($result = $mysqli->query($query)) {
@@ -22,8 +21,7 @@
   }
 
   // Output & closing the connection
-  $arr = array('cards' => $arrCards);
-  echo json_encode($arr);
+  echo json_encode($arrCards);
 
   $mysqli->close();
 ?>
